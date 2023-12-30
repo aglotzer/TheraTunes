@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Playlist for your mood and {weather}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ weather }}. Here is a playlist based on that weather and your mood!</h1>
+        <a href="{{ playlist_link }}" target="_blank">Open Playlist</a>
+    </div>
+</body>
+</html>

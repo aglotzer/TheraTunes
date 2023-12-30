@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Input</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome! Enter your city and mood:</h1>
+        <form action="/generate" method="post">
+            <input type="text" name="city" placeholder="Enter your city">
+            <textarea name="mood" placeholder="Describe your mood"></textarea>
+            <button type="submit">Generate Playlist</button>
+        </form>
+    </div>
+</body>
+</html>

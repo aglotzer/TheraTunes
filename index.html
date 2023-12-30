@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to TheraTunes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to TheraTunes</h1>
+        <p>Click the button below to sign in with Spotify and start your personalized music therapy session.</p>
+        <a href="{{ url_for('login') }}" class="btn">Sign in with Spotify</a>
+    </div>
+</body>
+</html>
